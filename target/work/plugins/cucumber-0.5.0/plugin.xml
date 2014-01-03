@@ -1,0 +1,30 @@
+<plugin name='cucumber' version='0.5.0' grailsVersion='1.3.0 &gt; *'>
+  <author>Martin Hauner</author>
+  <authorEmail>martin.hauner@gmx.net</authorEmail>
+  <title>Cucumber Plugin</title>
+  <description>Test your Grails apps with Cucumber</description>
+  <documentation>https://github.com/hauner/grails-cucumber/wiki</documentation>
+  <type>CucumberGrailsPlugin</type>
+  <resources>
+    <resource>CucumberConfig</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.objenesis' name='objenesis' version='1.2' />
+    </test>
+    <compile>
+      <dependency group='info.cukes' name='cucumber-groovy' version='1.0.4' />
+    </compile>
+  </dependencies>
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
