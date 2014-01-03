@@ -8,7 +8,7 @@ Scenario: query of a single term via googles search api
   Then a result is returned
 
 Scenario Outline: query of multiple terms via googles api
-  Given I query googe for "<query>"
+  Given I query google for "<query>"
   Then google will return a result with "<query>"
 
   Examples:
@@ -17,4 +17,4 @@ Scenario Outline: query of multiple terms via googles api
   |sloth   |
   |migraine|
   |grails  |
-  |~!@#$%^&*()  |
+  |Brian Warner  |

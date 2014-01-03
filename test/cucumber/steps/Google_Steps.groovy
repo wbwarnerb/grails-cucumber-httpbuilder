@@ -16,7 +16,7 @@ Then(~'^a result is returned$') { ->
     assert html.HEAD.size() == 1
     assert html.BODY.size() == 1
 }
-Given(~'^I query googe for "([^"]*)"$') { String arg1 ->
+Given(~'^I query google for "([^"]*)"$') { String arg1 ->
     // Express the Regexp above with the code you wish you had
     http = new HTTPBuilder('http://www.google.com')
     html = http.get( path : '/search', query : [q:"${arg1}"])
